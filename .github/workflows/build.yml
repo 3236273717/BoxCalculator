@@ -46,10 +46,11 @@ jobs:
           libfreetype6-dev \
           libpng-dev
     
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip setuptools virtualenv
-        pip install buildozer
+    - name: Install Python dependencies 
+      run: | 
+        python -m pip install --upgrade pip setuptools virtualenv 
+        pip install cython
+        pip install buildozer 
     
     - name: Build APK
       run: |
